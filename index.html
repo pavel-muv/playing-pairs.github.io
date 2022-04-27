@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 class="header__title">Игра в пары</h1>
+      <p class="header__text">
+        Ход игры: <br />
+        Введите в поле ниже количество карт находящихся по горизонтали от 4 до
+        10 (количество по горизонтали и вертикали совпадает) и нажмите кнопку
+        начать игру. Игрок может нажать на любую карточку. После нажатия
+        карточка открывается, то есть на ней пишется её цифра. Далее игрок может
+        открыть вторую карточку. Если обе открытые карточки содержат одинаковую
+        цифру, они остаются открытыми до конца игры. Если же вторая карточка
+        содержит отличную от первой цифру, обе они закрываются, как только игрок
+        откроет следующую карточку.<br />
+      </p>
+    </div>
+    <div class="wrapper">
+      <input class="input" value="4" type="number" min="4" max="10" />
+      <button class="button">Начать игру</button>
+      <h2 class="">Время игры <span class="time">60</span> сек</h2>
+      <div class="wrapper-cards"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
